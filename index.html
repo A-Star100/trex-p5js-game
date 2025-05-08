@@ -1,12 +1,30 @@
-<!DOCTYPE html><html><head>
-    <script src="p5.js"></script>
-    <script src="p5.dom.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-<script src="./p5.play.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  </head>
-  <body>
-      <script src="sketch.js"></script>
-</body></html>
+    <!-- Preload the style.css file -->
+    <link rel="preload" href="style.css" as="style">
+
+    <!-- Preload the JavaScript files -->
+    <link rel="preload" href="p5.js" as="script">
+    <link rel="preload" href="p5.dom.min.js" as="script">
+    <link rel="preload" href="p5.sound.min.js" as="script">
+    <link rel="preload" href="p5.play.js" as="script">
+    
+    <!-- Meta charset -->
+    <meta charset="utf-8">
+    
+    <!-- Defer loading the scripts to maintain order and execute after the document has loaded -->
+    <script src="p5.js" defer></script>
+    <script src="p5.dom.min.js" defer></script>
+    <script src="p5.sound.min.js" defer></script>
+    <script src="p5.play.js" defer></script>
+
+</head>
+<body>
+    <!-- Your game content here -->
+    <script src="sketch.js"></script>
+</body>
+</html>
