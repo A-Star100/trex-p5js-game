@@ -80,10 +80,10 @@ function draw() {
     trex.changeAnimation("running", treximg)
     trex.velocityY += 0.7;
     ground.velocityX = -(4+1*score/100)
-    if (keyDown("space") && trex.y >= 50) {
+    if (keyDown("space") && trex.collide(actualground)) {
       trex.velocityY = -14.5;
       jumpSFX.play();
-      }
+    }
       if (ground.x < 0) {
       ground.x = ground.width / 2;
       }
